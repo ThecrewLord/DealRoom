@@ -41,3 +41,4 @@ pytest -q
 ```bash
 python -m compileall app tests migrations seed_test_data.py run.py
 ```
+# test
