@@ -1,0 +1,31 @@
+.admin-page { padding: 24px; }
+.admin-page-header { display:flex; justify-content:space-between; gap:24px; align-items:flex-start; margin-bottom:20px; }
+.admin-page-header h2 { margin:0 0 6px; }
+.admin-page-header p { margin:0; opacity:.72; }
+.admin-table-wrap { overflow-x:auto; }
+.admin-table { width:100%; border-collapse:collapse; min-width:1050px; }
+.admin-table th,.admin-table td { padding:12px 10px; border-bottom:1px solid rgba(127,127,127,.2); text-align:left; vertical-align:top; }
+.role-chips { display:flex; flex-wrap:wrap; gap:5px; max-width:260px; }
+.role-chip { padding:4px 8px; border-radius:999px; background:rgba(80,120,255,.12); font-size:12px; white-space:nowrap; }
+.status-pill { display:inline-block; padding:4px 8px; border-radius:999px; font-size:12px; }
+.status-approved { background:rgba(40,170,100,.12); }
+.status-pending { background:rgba(230,170,30,.14); }
+.status-revoked { background:rgba(210,70,70,.14); }
+.admin-actions { display:flex; flex-wrap:wrap; gap:6px; }
+.admin-actions button,.modal-actions button { cursor:pointer; }
+.danger-button { color:#a22; }
+.admin-message { margin:10px 0 16px; }
+.admin-success { color:#16834b; }
+.breakable { overflow-wrap:anywhere; }
+.admin-modal-backdrop { position:fixed; inset:0; background:rgba(0,0,0,.48); display:flex; align-items:center; justify-content:center; z-index:1000; padding:20px; }
+.admin-modal { width:min(620px,100%); max-height:90vh; overflow:auto; background:var(--background, #fff); color:inherit; border-radius:14px; padding:20px; box-shadow:0 20px 60px rgba(0,0,0,.3); }
+.admin-modal-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:18px; }
+.admin-modal-header h3 { margin:0; }
+.admin-modal-header button { border:0; background:transparent; font-size:24px; cursor:pointer; }
+.modal-role-list { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; margin-bottom:18px; }
+.modal-role-list label { display:flex; gap:8px; align-items:center; }
+.field-label { display:flex; flex-direction:column; gap:6px; margin:12px 0; font-weight:600; }
+.field-label select { padding:9px; font:inherit; }
+.derived-field { padding:10px; border-radius:8px; background:rgba(127,127,127,.08); }
+.modal-actions { display:flex; justify-content:flex-end; gap:8px; margin-top:20px; }
+@media (max-width:700px) { .admin-page { padding:14px; } .modal-role-list { grid-template-columns:1fr; } .admin-page-header { flex-direction:column; } }
